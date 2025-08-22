@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="/action">
+        <label for="uid">
+            UID:
+        </label>
+        <input type="text" name="uid" pattern="Alphabet\{10}" placeholder="Enter your UID"required>
+        <br><br>
+
+        <label for="student_name">
+            Name:
+        </label>
+        <input type="text" id="student_name" name="student_name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="father_name">
+            Father's Name:
+        </label>
+        <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required>
+        <br><br>
+
+        <label for="mother_name">
+            Mother's Name:
+        </label>
+        <input type="text" id="mother_name" name="mother_name" placeholder="Enter your mother's name" required>
+        <br><br>
+
+        <label for="dob">
+            Date of Birth:
+        </label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="phone">
+            Mobile No:
+        </label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label for="email">
+            Email ID:
+        </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">
+            Password:
+        </label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label>
+            Gender:
+        </label>
+        <input type="radio" name="gender" value="male" id="male" required><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
+        <br><br>
+
+        <label>
+            Department:
+        </label>
+        <input type="checkbox" name="department" value="CSE" id="cse"><label for="cse">CSE</label>
+        <input type="checkbox" name="department" value="IT" id="it"><label for="it">IT</label>
+        <input type="checkbox" name="department" value="ECE" id="ece"><label for="ece">ECE</label>
+        <input type="checkbox" name="department" value="Civil" id="civil"><label for="civil">Civil</label>
+        <input type="checkbox" name="department" value="Mech" id="mech"><label for="mech">Mech</label>
+        <br><br>
+
+        <label for="course">
+            Course:
+        </label>
+        <select name="course" id="course" required>
+            <option value="">--------Select--------</option>
+            <option value="Full Stack">Full Stack</option>
+            <option value="IOT">IOT</option>
+            <option value="APP Development">APP Development</option> 
+            <option value="Machine Learning">Machine Learning</option>
+        </select>
+        <br><br>
+
+        <label for="address">
+            Address:
+        </label>
+        <br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Permanent Address" required></textarea>
+        <br><br>
+
+        <label for="photo">
+            Student Photo:
+        </label>
+        <input type="file" id="photo" name="photo" accept=".jpg,.png" required>
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
